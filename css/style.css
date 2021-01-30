@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+p {
+  margin: 0.75rem 0;
+}
+.py-1 {
+  padding: 1.5rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+
+.p-1 {
+  padding: 0.75rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
+
+/*utitilty classes*/
+.text-primary {
+  color: rgb(114, 114, 214);
+}
+.text-secondary {
+  color: rgb(11, 11, 61);
+}
+.text-center {
+  text-align: center;
+}
+.l-heading {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+.m-heading {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+.h-heading {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+.lead {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+.btn {
+  color: #fff;
+  background: rgb(114, 114, 214);
+  padding: 1rem 2.2rem;
+  border: none;
+  border-radius: 5px;
+  margin-top: 2rem;
+}
+.btn:hover {
+  background: rgb(44, 44, 87);
+  cursor: pointer;
+}
+.btn-dark {
+  background: #333;
+  color: #fff;
+}
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+.bg-light {
+  background: #fff;
+  color: #333;
+}
+.bg-primary {
+  background: rgb(103, 103, 161);
+  color: #fff;
+}
+/*navabar*/
+#navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background: #333;
+  color: #fff;
+  justify-content: space-between;
+  z-index: 1;
+  padding: 1rem;
+}
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+#navbar ul li a {
+  color: #fff;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover {
+  background: rgb(114, 114, 214);
+  cursor: pointer;
+  border-radius: 5px;
+}
+#navbar img {
+  width: 5%;
+  object-fit: contain;
+  text-align: center;
+}
+/*showcase*/
+#Showcase {
+  background: #333 url("../img/hack.jpg") no-repeat center center/cover;
+  color: #fff;
+  height: 100vh;
+}
+#Showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+  /*Overlay*/
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(0, 0, 0, 0.4);
+}
+/*what we do*/
+#What .items {
+  display: flex;
+  padding: 1rem;
+}
+#What .items .item {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+#What .items .item i {
+  background: rgb(114, 114, 214);
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  align-self: center;
+}
+/*who section*/
+#Who {
+  display: flex;
+}
+#Who div {
+  flex: 1;
+}
+#Who .who-img {
+  background: url("../img/sam3.jpg") no-repeat center center/cover;
+}
+#Who .who-text {
+  line-height: 1.5rem;
+}
+#Who .list {
+  margin: 0.5rem 0;
+  list-style: none;
+}
+#Who .list li {
+  border-bottom: #444 dashed 1px;
+  padding: 0.1rem 0;
+}
+/*contact section*/
+#Contact {
+  display: flex;
+}
+#Contact .contact-form,
+#Contact .map {
+  flex: 1;
+}
+#Contact .form-group,
+#Contact .map {
+  margin: 0.75rem;
+}
+
+#Contact .form-group label {
+  display: block;
+}
+#Contact .contact-form input {
+  width: 100%;
+  padding: 0.6rem;
+}
+#Contact .contact-form textarea {
+  width: 100%;
+  padding: 3rem;
+}

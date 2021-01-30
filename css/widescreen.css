@@ -1,0 +1,17 @@
+/*align items*/
+#What .items .item {
+  display: flex;
+  text-align: left;
+}
+#What .items .item i {
+  align-self: center;
+  margin-right: 1rem;
+  margin-bottom: 0;
+}
+#Contact .map {
+  flex: 2;
+  border: none;
+}
+#Who .who-img {
+  max-width: 37%;
+}
